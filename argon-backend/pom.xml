@@ -82,6 +82,15 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <arguments>
+                        <argument>--spring.profiles.active=prod</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
